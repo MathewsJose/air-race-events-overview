@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink-50: #f7f7f2;
+  --color-ink-100: #ecebe3;
+  --color-ink-200: #d9d6c7;
+  --color-ink-400: #8b8575;
+  --color-ink-700: #3d392d;
+  --color-ink-900: #1f1d17;
+
+  --color-sky-100: #dff4ff;
+  --color-sky-300: #7cc9f7;
+  --color-sky-500: #1993d2;
+  --color-sky-700: #0b5f8b;
+
+  --color-sand-100: #fff3d6;
+  --color-sand-400: #e7b857;
+  --color-sand-600: #b17e16;
+
+  --color-rose-100: #ffe1de;
+  --color-rose-500: #d45a4d;
+
+  --font-display: "Space Grotesk", "Segoe UI", sans-serif;
+  --font-body: "Manrope", "Segoe UI", sans-serif;
+
+  --shadow-card: 0 16px 40px rgba(26, 25, 20, 0.08);
+}
+
+html,
+body,
+#__nuxt {
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background:
+    radial-gradient(circle at top left, rgba(223, 244, 255, 0.95), transparent 34%),
+    linear-gradient(180deg, #fcfbf7 0%, #f5f1e7 100%);
+  color: var(--color-ink-900);
+}
+
+.leaflet-container {
+  font-family: var(--font-body);
+  background: #e9f3f8;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 1rem;
+  box-shadow: var(--shadow-card);
+}
+
+.leaflet-popup-content {
+  margin: 0;
+}
