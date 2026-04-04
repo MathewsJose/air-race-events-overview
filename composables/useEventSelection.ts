@@ -21,7 +21,7 @@ export function useEventSelection(events: Ref<RaceEvent[]>) {
         hoveredEventId.value = null;
       }
 
-      if (!selectedEventId.value || !visibleEventIds.has(selectedEventId.value)) {
+      if (selectedEventId.value && !visibleEventIds.has(selectedEventId.value)) {
         selectedEventId.value = visibleEvents[0]?.id ?? null;
       }
     },

@@ -57,7 +57,7 @@ The shared state is small and page-scoped: events, loading/error, category filte
 
 - The map is implemented directly with Leaflet instead of a Vue map wrapper to keep dependencies low.
 - Hover behavior is enabled only on devices that report hover support, which keeps mobile interaction simpler.
-- The current selection falls back to the first visible item when filtering removes the previous selection. That avoids stale state and keeps the interface predictable.
+- No event is preselected on initial load, which keeps first-render list interactions consistent. If filtering removes the current selection, the app falls back to the first visible item to avoid stale state.
 - Marker popups render concise HTML content directly from known event data to keep the integration simple in a small assignment.
 
 ## What I Would Improve With More Time
