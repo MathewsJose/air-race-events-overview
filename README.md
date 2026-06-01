@@ -1,6 +1,6 @@
 # Air Race Events Overview
 
-Small Nuxt 3 coding-assignment solution for browsing air race events on a synchronized map and list. The implementation stays intentionally lean: typed event data, focused composables, a direct Leaflet integration, Tailwind styling, and a tiny server route that can later be replaced by a CMS-backed API.
+Small Nuxt 3 air race events on a synchronized map and list. The implementation stays intentionally lean: typed event data, focused composables, a direct Leaflet integration, Tailwind styling, and a tiny server route that can later be replaced by a CMS-backed API.
 
 ## Setup
 
